@@ -1,0 +1,6 @@
+<h2>add new task herer</h2>
+<input #title type="text" placeholder="task title" class="form-control">
+<textarea #description type="text" placeholder="task description" class="form-control"></textarea>
+
+
+<button class="btn btn-primary" (click)="savetask(title.value,description.value)"> save</button>

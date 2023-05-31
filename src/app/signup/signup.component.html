@@ -1,0 +1,15 @@
+<p>signup works!</p>
+<form  [formGroup]= "sinupform"   (ngSubmit)="omar(name.value)">
+<input #name type="text" class="form-control" formControlName="name">
+<div *ngIf="sinupform.controls['name'].invalid &&sinupform.controls['name'].touched">
+<span  *ngIf="sinupform.controls['name'].errors.required  ">  reqire</span> 
+<span  *ngIf="sinupform.controls['name'].errors.email  ">  reqir emaile</span>  
+
+</div>
+
+
+<button type="submit"> enter</button>
+
+
+</form>
+

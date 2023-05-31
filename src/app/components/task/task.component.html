@@ -1,0 +1,19 @@
+<p>task works!</p>
+<div *ngIf="!tasks">
+   <p class="alert alert-danger">  no params </p>
+</div>
+
+<div *ngIf="tasks" >
+    <input #title type="text" placeholder="task title"
+    [(ngModel)]="tasks.title"
+    
+    class="form-control">
+<textarea #description type="text" placeholder="task description" 
+[(ngModel)]="tasks.description" class="form-control"></textarea>
+
+
+<button class="btn btn-primary" (click)="editsave()" > save</button>
+<button class="btn btn-primary" (click)="delettaskitem()" > delet</button>
+  
+  
+</div>

@@ -1,0 +1,22 @@
+<p>mycomp works! z{{titles | uppercase }}</p>
+
+
+<!-- ده نظام البيب pipe -->
+<p>{{val |uppercase}}</p>
+
+<h2>{{numb()==5?"no":"yes"}}</h2>
+
+<!-- بدل ما امرر e
+    (keyup.enter)="onkeyup($event)"
+    ===>in ts.model
+    onkeyup(e:any){
+        console.log(e.target.value)
+    }
+
+في طريقه اخري وهي اللي كاتبها دي
+
+-->
+ <input #myinput type="text" [(ngModel)]="val"(keyup.enter)="keyup(myinput)"> 
+
+
+ 
